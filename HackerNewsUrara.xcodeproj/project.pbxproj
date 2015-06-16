@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E48D5A201B1BE4410081FE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D5A1F1B1BE4410081FE09 /* AppDelegate.swift */; };
-		E48D5A221B1BE4410081FE09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D5A211B1BE4410081FE09 /* ViewController.swift */; };
+		E456DFAE1B3016130040DCD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DFAD1B3016130040DCD1 /* MainViewController.swift */; };
 		E48D5A251B1BE4410081FE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48D5A231B1BE4410081FE09 /* Main.storyboard */; };
 		E48D5A271B1BE4410081FE09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48D5A261B1BE4410081FE09 /* Images.xcassets */; };
 		E48D5A2A1B1BE4410081FE09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48D5A281B1BE4410081FE09 /* LaunchScreen.xib */; };
@@ -26,10 +25,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E456DFAC1B3016130040DCD1 /* HackerNewsUrara-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNewsUrara-Bridging-Header.h"; sourceTree = "<group>"; };
+		E456DFAD1B3016130040DCD1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E48D5A1A1B1BE4410081FE09 /* HackerNewsUrara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsUrara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48D5A1E1B1BE4410081FE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E48D5A1F1B1BE4410081FE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E48D5A211B1BE4410081FE09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E48D5A241B1BE4410081FE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48D5A261B1BE4410081FE09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E48D5A291B1BE4410081FE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -77,12 +76,12 @@
 		E48D5A1C1B1BE4410081FE09 /* HackerNewsUrara */ = {
 			isa = PBXGroup;
 			children = (
-				E48D5A1F1B1BE4410081FE09 /* AppDelegate.swift */,
-				E48D5A211B1BE4410081FE09 /* ViewController.swift */,
+				E456DFAD1B3016130040DCD1 /* MainViewController.swift */,
 				E48D5A231B1BE4410081FE09 /* Main.storyboard */,
 				E48D5A261B1BE4410081FE09 /* Images.xcassets */,
 				E48D5A281B1BE4410081FE09 /* LaunchScreen.xib */,
 				E48D5A1D1B1BE4410081FE09 /* Supporting Files */,
+				E456DFAC1B3016130040DCD1 /* HackerNewsUrara-Bridging-Header.h */,
 			);
 			path = HackerNewsUrara;
 			sourceTree = "<group>";
@@ -212,8 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48D5A221B1BE4410081FE09 /* ViewController.swift in Sources */,
-				E48D5A201B1BE4410081FE09 /* AppDelegate.swift in Sources */,
+				E456DFAE1B3016130040DCD1 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +338,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HackerNewsUrara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackerNewsUrara/HackerNewsUrara-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +351,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HackerNewsUrara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackerNewsUrara/HackerNewsUrara-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +412,7 @@
 				E48D5A3B1B1BE4410081FE09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E48D5A3C1B1BE4410081FE09 /* Build configuration list for PBXNativeTarget "HackerNewsUraraTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +421,7 @@
 				E48D5A3E1B1BE4410081FE09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
