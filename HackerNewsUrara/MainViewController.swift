@@ -6,6 +6,8 @@
 //  Copyright (c) 2015年 田口うらら. All rights reserved.
 //
 
+
+
 import UIKit
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -24,7 +26,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var postFilter: PostFilterType!
     var posts: [HNPost]!
     var nextPageId: String!
-    var scrolledToBottom: BOol!
+    var scrolledToBottom: Bool!
     var refreshControll: UIRefreshControl!
     var errorMessageLabel: UILabel!
     
