@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E456DFAE1B3016130040DCD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DFAD1B3016130040DCD1 /* MainViewController.swift */; };
+		E456DFB01B3199150040DCD1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DFAF1B3199150040DCD1 /* SettingsViewController.swift */; };
+		E456DFB21B31992E0040DCD1 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DFB11B31992E0040DCD1 /* BrowserViewController.swift */; };
+		E456DFB41B3199520040DCD1 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456DFB31B3199520040DCD1 /* HairlineView.swift */; };
 		E48D5A251B1BE4410081FE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48D5A231B1BE4410081FE09 /* Main.storyboard */; };
 		E48D5A271B1BE4410081FE09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48D5A261B1BE4410081FE09 /* Images.xcassets */; };
 		E48D5A2A1B1BE4410081FE09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E48D5A281B1BE4410081FE09 /* LaunchScreen.xib */; };
@@ -27,6 +30,9 @@
 /* Begin PBXFileReference section */
 		E456DFAC1B3016130040DCD1 /* HackerNewsUrara-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackerNewsUrara-Bridging-Header.h"; sourceTree = "<group>"; };
 		E456DFAD1B3016130040DCD1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E456DFAF1B3199150040DCD1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E456DFB11B31992E0040DCD1 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		E456DFB31B3199520040DCD1 /* HairlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
 		E48D5A1A1B1BE4410081FE09 /* HackerNewsUrara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsUrara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48D5A1E1B1BE4410081FE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E48D5A241B1BE4410081FE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,11 +83,14 @@
 			isa = PBXGroup;
 			children = (
 				E456DFAD1B3016130040DCD1 /* MainViewController.swift */,
+				E456DFAF1B3199150040DCD1 /* SettingsViewController.swift */,
+				E456DFB11B31992E0040DCD1 /* BrowserViewController.swift */,
+				E456DFB31B3199520040DCD1 /* HairlineView.swift */,
+				E456DFAC1B3016130040DCD1 /* HackerNewsUrara-Bridging-Header.h */,
 				E48D5A231B1BE4410081FE09 /* Main.storyboard */,
 				E48D5A261B1BE4410081FE09 /* Images.xcassets */,
 				E48D5A281B1BE4410081FE09 /* LaunchScreen.xib */,
 				E48D5A1D1B1BE4410081FE09 /* Supporting Files */,
-				E456DFAC1B3016130040DCD1 /* HackerNewsUrara-Bridging-Header.h */,
 			);
 			path = HackerNewsUrara;
 			sourceTree = "<group>";
@@ -211,7 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E456DFB41B3199520040DCD1 /* HairlineView.swift in Sources */,
 				E456DFAE1B3016130040DCD1 /* MainViewController.swift in Sources */,
+				E456DFB21B31992E0040DCD1 /* BrowserViewController.swift in Sources */,
+				E456DFB01B3199150040DCD1 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

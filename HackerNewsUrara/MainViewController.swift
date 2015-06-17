@@ -27,7 +27,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let NoPostsErrorMessage = "No More Posts to Fetch"
     let ErrorMessageLabelTextColor = UIColor.grayColor()
     let ErrorMessageFontSize: CGFloat = 16
-    let DefaultPostFilterType = PostFilterType.Top
+    let DefaultPostFilterType = PostFilterType.Type
     
     var postFilter: PostFilterType!
     var posts: [HNPost]!
@@ -190,7 +190,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         } else if sender.selectedSegmentIndex == 1 {
             postFilter = .New
         } else if sender.selectedSegmentIndex == 2 {
-            post Filter = .Ask
+            postFilter = .Ask
         } else {
             plintln("Bad segment index!")
         }
